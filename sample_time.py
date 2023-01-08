@@ -1,6 +1,4 @@
-'''
-https://docs-python.ru/standart-library/modul-time-python/funktsija-perf-counter-modulja-time/
-'''
+# https://docs-python.ru/standart-library/modul-time-python/funktsija-perf-counter-modulja-time/
 
 import time
 
