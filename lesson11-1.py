@@ -32,11 +32,11 @@ def search(alphabet):
                 print(d)
 
 def check(d):
-    # 4
-    a = str_to_int('баклан', d)
-    b = str_to_int('макака', d)
-    c = str_to_int('гибрид', d)
-    return a + b == c
+    # # 4
+    # a = str_to_int('баклан', d)
+    # b = str_to_int('макака', d)
+    # c = str_to_int('гибрид', d)
+    # return a + b == c
     # # 0    
     # a = str_to_int('ЛЕТО', d)
     # b = str_to_int('ПОЛЕТ', d)
@@ -49,15 +49,15 @@ def check(d):
     # # ToDo: if b < 10**(len(b)) ... False
     # return a * 7 == b
     # 2
-    # a = str_to_int('ШЕЛ', d)
-    # b = str_to_int('ПРИШЕЛ', d)
-    # return a * a == b
+    a = str_to_int('ШЕЛ', d)
+    b = str_to_int('ПРИШЕЛ', d)
+    return a * a == b
 
 # s = 'ШЕЛ * ШЕЛ = ПРИШЕЛ'
-# alphabet = 'ПРИШЕЛ'
+alphabet = 'ПРИШЕЛ'
 # alphabet = 'ПЧЕЛКАЖ'
 # alphabet = 'ПОЛЕТ'
-alphabet = 'баклнмгирд' # 'баклан+макака=гибрид'
+# alphabet = 'баклнмгирд' # 'баклан+макака=гибрид'
 
 start_time = time.perf_counter()
 
