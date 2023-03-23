@@ -54,7 +54,7 @@ def check(d):
     return a * a == b
 
 # s = 'ШЕЛ * ШЕЛ = ПРИШЕЛ'
-alphabet = 'ПРИШЕЛ'
+alphabet = 'ПРИШЕЛ' # 3.26808393 seconds
 # alphabet = 'ПЧЕЛКАЖ'
 # alphabet = 'ПОЛЕТ'
 # alphabet = 'баклнмгирд' # 'баклан+макака=гибрид'
@@ -64,7 +64,7 @@ start_time = time.perf_counter()
 res = search(alphabet)
 
 end_time = time.perf_counter()
-print(f"The execution time: {end_time - start_time:.8f} seconds")
+print(f"Ver.1 time: {end_time - start_time:.8f} seconds")
 
 # print(res)
 '''

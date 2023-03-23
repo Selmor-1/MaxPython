@@ -98,23 +98,22 @@ def search(code: str, operators: str, alone: bool):
                     return
 
 ''' MAIN '''
-
 ### ToDo: digital constants doens't supported
 
 # CODE = 'баклан + макака = гибрид'
 # CODE = 'AAA + BDD = ACC'
 # CODE = 'AAA + BBB + DDD + E = CCC'
-# CODE = 'ШЕЛ * ШЕЛ = ПРИШЕЛ'
-# CODE = 'ТЭТА + БЭТА = СУММА'
-# CODE = 'КАФТАН + КАФТАН = ТРИШКА'
-# CODE = 'АТАКА + УДАР + УДАР = НОКАУТ'
-# CODE = 'ПОДАЙ - ВОДЫ = ПАША'
+# CODE = 'ШЕЛ * ШЕЛ = ПРИШЕЛ' # 4.46909240 seconds
+CODE = 'ТЭТА + БЭТА = СУММА' # (7) 28.55961910 seconds
+# CODE = 'КАФТАН + КАФТАН = ТРИШКА' # (8)
+# CODE = 'АТАКА + УДАР + УДАР = НОКАУТ' # (8)
+# CODE = 'ПОДАЙ - ВОДЫ = ПАША' # (8)
 # CODE = 'охохо+ахаха=ахахах'
-CODE = 'This+is=easy'
+# CODE = 'This+is=easy'
 OPERATORS = '=+-*'
 SINGLE_ANSWER = True
 
 start_time = time.perf_counter()
-search(CODE, OPERATORS, not SINGLE_ANSWER)
+search(CODE, OPERATORS, SINGLE_ANSWER)
 end_time = time.perf_counter()
-print(f"The execution time: {end_time - start_time:.8f} seconds")
+print(f"Ver.2 time: {end_time - start_time:.8f} seconds")
