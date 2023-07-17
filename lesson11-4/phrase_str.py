@@ -8,8 +8,10 @@ class phrase_str(phrase_abstract):
         res = 0
         for ind, key in enumerate(self.text):
             res = 10 * res + alphabet[key]
-            if ind == 0 and res == 0:
-                return 0
+            # if ind == 0 and res == 0:
+            #     return 0
+        if len(str(res)) < len(self.text):
+            return 0
         return res        
 
     def dump(self, alphabet: dict = {}):
